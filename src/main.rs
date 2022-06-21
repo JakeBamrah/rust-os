@@ -15,6 +15,6 @@ fn panic(_info: &PanicInfo) -> ! {
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
     // this function is the entry point, since the linker looks for a function
-    // named `_start` by default
+    // named `_start` by default (when using Linux conventions)
     loop{}
 }
